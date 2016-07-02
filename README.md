@@ -24,5 +24,8 @@ Thanks.
 ##### Make Following changes :  
 
 * Put your app key in sendOTP.php
-* Replace your Domain name in sendOTP.php
+* Replace your Domain name in index.php
+* 
+
+
 
