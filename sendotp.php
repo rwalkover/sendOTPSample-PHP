@@ -4,7 +4,7 @@ session_start();
 class SendOTP
 {
   private $baseUrl = "http://api.msg91.com/api/";
-  private $authkey = "154290AGqS2KTfWh592d4a02"; // 
+  private $authkey = "Your Auth key"; // 
 
   public function submitOTP($request)
   {
@@ -22,7 +22,7 @@ class SendOTP
     $response =  $this->dataProcess($url,$data);
 
     $response = json_decode($response, true);
-    
+
     if ($response["type"] == "error") {
       //customize this as per your framework
      
