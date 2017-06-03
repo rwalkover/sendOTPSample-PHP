@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Material Design Bootstrap</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
+      <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <style >
+      <style >
       .view {
         height: 100%;
       }
@@ -32,7 +28,7 @@
   </head>
   
 
-  <script type="text/javascript" src="jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
   <script type="text/javascript">
     function sendOTP() {
       $("#sendOtp").attr("disabled", true);
@@ -41,7 +37,8 @@
        "mobileNumber": $('#number').val()
      };
      $.ajax({
-      url: 'http://localhost/sendOTPSample-PHP/sendotp.php?action=submitOTP',
+      // but url domain name here
+      url: 'http://www.your_domain_name/sendotp.php?action=submitOTP',
       type: 'POST',
       data: data,
       success: function (response) {
@@ -68,7 +65,7 @@
      oneTimePassword: $('#oneTimePassword').val()
    };
    $.ajax({
-    url: 'http://localhost/sendOTPSample-PHP/sendotp.php?action=verifyBySendOtp',
+    url: 'http://www.your_domain_name/sendotp.php?action=verifyBySendOtp',
     type: 'POST',
     data: data,
     success: function (response) {
@@ -123,12 +120,6 @@
 
 </pre>
 
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="js/tether.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="js/mdb.min.js"></script>
 
 </body>
 </html>
